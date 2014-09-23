@@ -145,6 +145,7 @@ public class EstimotePlugin extends CordovaPlugin
             obj.put("major", beacon.getMajor());
             obj.put("minor", beacon.getMinor());
             obj.put("measuredPower", beacon.getMeasuredPower());
+            obj.put("rssi", beacon.getRssi());
         } catch (JSONException e) {
             Log.e(LOG_TAG, e.getMessage(), e);
         }
